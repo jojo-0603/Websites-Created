@@ -1,0 +1,78 @@
+body{
+    background: lightgray;
+  
+}
+h5{
+    color: #000;
+font-family: Montserrat;
+font-size: 32px;
+font-style: normal;
+
+}
+img{
+    width:1895px;
+    height: 870px;
+    margin-top: -5px;
+    margin-left: -8px;
+    position: absolute;
+    z-index:-1;
+   
+}
+
+  
+  #SV{
+    color: #000;
+font-family: Montserrat;
+font-size: 40px;
+
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+  }
+  
+    .home{
+        margin-left: 700px;
+    display: inline-flex;
+    margin-top: -100px;
+  
+    gap: 60px;
+    color: #000;
+    font-family: Montserrat;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  #under{
+    color: #FFF;
+font-family: Montserrat;
+font-size: 64px;
+font-style: normal;
+font-weight: 800;
+line-height: normal;
+margin-left: 300px;
+  }
+  button{
+    display: flex;
+width: 281px;
+height: 100px;
+padding: 7px 54px 6px 55px;
+justify-content: center;
+align-items: center;
+flex-shrink: 0;
+border-radius: 400px;
+background: rgba(59, 115, 198, 0.92);
+box-shadow: 0px 4px 25px 10px rgba(59, 115, 198, 0.25);
+margin-left: 830px;
+margin-top:380px;
+  }
+  #sort{
+    width: 172px;
+flex-shrink: 0;
+color: #FFF;
+font-family: Moul;
+font-size: 48px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+  }

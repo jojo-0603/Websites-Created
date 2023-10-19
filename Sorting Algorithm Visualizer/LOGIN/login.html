@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sort Visualizer</title>
+    <link rel="stylesheet" href="../LOGIN/login.css" />
+    
+  </head>
+  <body>
+    <div class="login">
+      <h1>SortVisualizer</h1>
+      <div class="form-box">
+        <div class="button-box">
+          <div id="btn"></div>
+          <button type="button" class="toggle-btn" onclick="login()">Log In</button>
+          <button type="button" class="toggle-btn" onclick="register()">Register</button>
+        </div>
+        <form id="log" onsubmit="login(event)"  class="input-grp">
+          <input
+            type="email"
+            id="email_log"
+            class="input-field"
+            placeholder="GMAIL"
+            size="50"
+            required
+          />
+          <input
+            type="password"
+            id="password_log"
+            class="input-field"
+            placeholder="PASSWORD"
+            required
+          /><div></div>
+          <a href="#" > <p class="FP">ForgetPassword?</p></a>
+          <button type="submit" class="submit-btn"><a href="../Home/home.html">LOGIN</a></button>
+        </form>
+        <form id="reg" class="input-grp" onsubmit="reg_user()">
+            <input
+              type="text"
+              id="fname_reg"
+              class="input-field"
+              placeholder="FULL NAME"
+              required
+            />
+            <input
+              type="email"
+              id="email_reg"
+              class="input-field"
+              placeholder="GMAIL"
+              size="50"
+              required
+            />
+            <input
+              type="password"
+              id="password_reg"
+              class="input-field"
+              placeholder="PASSWORD"
+              required
+            /> 
+           
+            <button type="submit" id="subreg"class="submit-btn">REGISTER</button>
+          </form>
+        <div class="social-icons" id="using">
+            <h4 >Or LOGIN using</h4>
+          <img src="../Img/devicon_google.png" />
+          <img src="/Img/bi_github.png" />
+          <img src="../Img/devicon_facebook.png" />
+        </div>
+      </div>
+    </div>
+    <script src="./login.js" ></script>
+    <script type="module">
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/10.5.0/firebase-app.js";
+import { getDatabase,set,ref } from "https://www.gstatic.com/firebasejs/10.5.0/firebase-database.js";
+import { getAuth, createUserWithEmailAndPassword,signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.5.0/firebase-auth.js";
+const firebaseConfig = {
+    apiKey: "AIzaSyDbsIY_Q5SYxQnJHWiJXgkEmJDsh88ppms",
+    authDomain: "sortvisualizer-92ecd.firebaseapp.com",
+    projectId: "sortvisualizer-92ecd",
+    storageBucket: "sortvisualizer-92ecd.appspot.com",
+    messagingSenderId: "958336626950",
+    appId: "1:958336626950:web:0a6f6b82e7dfc159022e87",
+    measurementId: "G-V09ZZVZ397"
+  };
+
+  var x=document.getElementById("log");
+  var y=document.getElementById("reg");
+  var z=document.getElementById("btn");
+  var or=document.getElementById("using");
+  let fname=document.getElementById("fname_reg");
+  var email=document.getElementById("email_reg");
+   var passwd=document.getElementById("password_reg");
+ 
+let submitreg=document.getElementById("subreg")
+ 
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const db= getDatabase();
+  const auth =getAuth(app);
+window.reg_user=function(e){
+ // e.preventDefault();
+  var obj ={
+    fname:fname.value,
+    email:email.value,
+    pass:passwd.value,
+  }
+  createUserWithEmailAndPassword(auth,obj.email,obj.pass)
+  .then(function(success){
+    alert("done")
+
+  })
+  .catch((err)=>{
+        alert(err.message);
+        console.log(err.code)
+    })
+window.login=function(e){
+      var obj ={
+    email:email.value,
+    pass:passwd.value,
+  }
+  signInWithEmailAndPassword(auth,obj.email,obj.pass)
+  .then(function(success){
+    alert("done")
+
+  })
+  .catch((err)=>{
+    window.location.replace('../Home/home.html')
+        alert(err.message);
+        console.log(err.code)
+    })
+    }
+
+
+
+}
+    </script>
+    <!-- <script src="./auth.js"></script>" -->
+
+
+  </body>
+</html>
