@@ -1,0 +1,97 @@
+.container{
+    display: flex;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital@1&family=Nova+Square&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+
+}
+.sidebar{
+    background-color: rgb(152, 148, 148);
+   width: 16vw;
+    height: 50vw;
+    font-family: 'Fira Sans', sans-serif;
+    transition: transform 0.3s ease-in;
+}
+.sidebar nav{
+    padding: 35px;
+}
+.sidebar nav li{
+    list-style: none;
+    font-size: 33px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.sidebar nav li a{
+    text-decoration: none;
+    color: aliceblue;
+}
+.main{
+    /* background-color: yellow; */
+    width: 90vw;
+    padding: 20px;
+}
+.intro h1{
+    font-family: 'Fira Sans', sans-serif;
+    margin:23px;
+}
+.intro h2{
+    font-family: 'Fira Sans', sans-serif;
+    margin:28px;
+    margin-top: 53px;
+}
+.intro p{
+    margin : 23px;
+}
+.skillscontainer{
+    padding: 12px;
+    padding-left: 25px;
+}
+.skillitem{
+    display: flex;
+    align-items: center;
+}
+.skill{
+    width:260px;
+    height: 6px;
+    padding-left: 30px;
+    border: 1px solid black;
+    background-color: red;
+}
+#ham{
+    position: absolute;
+    cursor: pointer;
+    top: 22px;
+    left: 10px;
+   
+  } 
+.sidebarGo{
+    transform: translate(-443px , 0px);
+    position: absolute;
+
+}
+.ht{
+    margin-left: 70px;
+}.cs{
+    margin-left: 85px;
+}.js{
+    margin-left: 25px;
+}.ja{
+    margin-left: 78px;
+}.py{
+    margin-left: 50px;
+}
+.hundered{
+    width: 265px;
+
+}
+.fifty{
+    width: 130px;
+}
+.t5{
+width:80px;
+}

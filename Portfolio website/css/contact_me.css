@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital@1&family=Nova+Square&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+
+}
+.sidebar{
+    background-color: rgb(152, 148, 148);
+   width: 16vw;
+    height: 50vw;
+    font-family: 'Fira Sans', sans-serif;
+    transition: transform 0.3s ease-in;
+}
+.sidebar nav{
+    padding: 35px;
+}
+#ham{
+    position: absolute;
+    cursor: pointer;
+    top: 22px;
+    left: 10px;
+   
+  } 
+  #cross{
+    position: absolute;
+    cursor: pointer;
+    top: 22px;
+    left: 250px;
+  
+  }
+.sidebar nav li{
+    list-style: none;
+    font-size: 33px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.sidebar nav li a{
+    text-decoration: none;
+    color: aliceblue;
+}
+.sidebarGo{
+    transform: translate(-443px , 0px);
+    position: absolute;
+
+}
+
+.main{
+    /* background-color: yellow; */
+    width: 90vw;
+}
+.container{
+    display: flex;
+}
+.contactform h1{
+    margin-top: 20px;
+    font-size: 60px;
+    
+    text-align: center;
+}
+.contactform form{
+  
+    margin:40px 0;
+    padding: 0 300px;
+    padding-bottom: 20px;
+    border: 2px solid black;
+}
+.contactform form div{
+ 
+    width: 16vw;
+    margin:30px 0;
+    border-radius: 9px;
+    padding: 3px;
+    display: flex;
+    flex-direction: column;
+    
+}
+.form-label{
+ font-size: 30px;
+}
+.form-control{
+    padding: 7px;
+    border-radius: 9px;
+}
+#emailHelp{
+    font-size: 9px;
+    margin:0 5px;
+}
+.contactform {
+    padding: 0 344px;
+    
+    font-family: 'Fira Sans', sans-serif;
+}
+.contactform form button{
+
+    border-radius: 20px;
+    padding: 15px;
+    background-color: dodgerblue;
+    color: whitesmoke;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    margin: 0 120px;
+    }

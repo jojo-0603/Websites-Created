@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital@1&family=Nova+Square&family=Oswald&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: beige;
+}
+.container nav{
+    background-color: rgb(39, 23, 23);
+    padding: 12px 3px;
+    display: flex;
+    justify-content: space-between;
+}
+.container ul{
+    color: azure;
+margin: 15px 0;
+    font-family: 'Fira Sans', sans-serif;
+font-family: 'Nova Square', sans-serif;
+font-family: 'Oswald', sans-serif;
+    display: flex;
+    
+}.container ul li{
+    list-style: none;
+    margin :0 23px;
+    cursor: pointer;
+}
+
+.main{
+    max-width: 80vw;
+    margin:30px 630px;
+    padding: 20px;
+    border: 1px solid black;
+    background-color: rgb(217, 209, 209);
+   
+}
+.main table ,td ,tr{
+    border: 2px solid black;
+    border-collapse:collapse ;
+    padding: 1px 13px;
+   
+}
+.main table {
+    border: 1px solid black;
+   
+}
+.main table ,th{
+   
+    padding:  7px;
+   
+}
+.main table, td{
+   
+    padding:  5px;
+   
+}
+.logo{
+    color: aliceblue;
+    font-family: 'Fira Sans', sans-serif;
+    font-family: 'Nova Square', sans-serif;
+    font-family: 'Oswald', sans-serif;
+   font-weight: bold;
+   font-size: 25px;
+   margin-left:  20px;
+   margin-top: 10px;
+}
+h1,h2{
+    margin: 23px 0;
+}
+.main button{
+    font-family: 'Fira Sans', sans-serif;
+    font-family: 'Nova Square', sans-serif;
+   font-size: 20px;
+    padding: 16px 30px;
+    background-color:rgb(39, 23, 23); 
+    color: azure;
+    font-weight: 900;
+    border: 2px solid grey;
+    border-radius: 10px;
+    margin: 27px 232px;;
+    cursor: pointer;
+
+}

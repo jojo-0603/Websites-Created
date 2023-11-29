@@ -1,0 +1,116 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital@1&family=Nova+Square&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+
+}
+.sidebar{
+    background-color: rgb(152, 148, 148);
+   width: 16vw;
+    height: 50vw;
+    font-family: 'Fira Sans', sans-serif;
+    transition: transform 0.3s ease-in;
+}
+.sidebar nav{
+    padding: 35px;
+}
+.sidebar nav li{
+    list-style: none;
+    font-size: 33px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.sidebar nav li a{
+    text-decoration: none;
+    color: aliceblue;
+}
+.main{
+    /* background-color: yellow; */
+    width: 90vw;
+}
+.infoContainer{
+    /* background-color: orange; */
+    margin: 144px auto;
+height: 50vh;
+width: 80vw;
+display: flex;
+justify-content:space-around;
+  
+}
+.devPic img{
+    height: 50vh;
+   
+  
+    
+}
+.hello{
+    font-size: 70px;
+}
+.name{
+    font-size: 60px;
+    font-weight: bold;
+}
+.about{
+    font-size: 45px;
+}
+.buttons {
+margin-top: 12px;
+}
+.sidebarGo{
+    transform: translate(-443px , 0px);
+    position: absolute;
+
+}
+
+.buttons button{
+border-radius: 20px;
+padding: 10px;
+background-color: dodgerblue;
+color: whitesmoke;
+font-weight: bold;
+font-size: 15px;
+cursor: pointer;
+}
+.devInfo{
+    
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Fira Sans', sans-serif;
+font-family: 'Nova Square', sans-serif;
+
+}
+  #ham{
+    position: absolute;
+    cursor: pointer;
+    top: 22px;
+    left: 10px;
+   
+  } 
+  #cross{
+    position: absolute;
+    cursor: pointer;
+    top: 22px;
+    left: 250px;
+  
+  }
+  
+@media (max-width: 1600px) {
+    *{
+        background-color: rgb(202, 98, 98);
+    }
+    .sidebar{
+        transform: translate(-443px , 0px);
+        position: absolute;
+
+    }
+}
+
+    
+
+.container{
+    display: flex;
+}

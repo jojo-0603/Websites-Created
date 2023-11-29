@@ -1,13 +1,22 @@
 body{
-    background: lightgray;
+    background: rgba(58, 24, 1, 0.542);
   
 }
 h5{
-    color: #000;
+    color:whitesmoke;
 font-family: Montserrat;
 font-size: 32px;
 font-style: normal;
 
+}
+a:link, a:visited {
+  color: whitesmoke;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:link:active, a:visited:active {
+  color: (internal value);
 }
 img{
     width:1895px;
@@ -36,7 +45,7 @@ line-height: normal;
     margin-top: -100px;
   
     gap: 60px;
-    color: #000;
+    color: white;
     font-family: Montserrat;
     font-size: 35px;
     font-style: normal;
@@ -51,6 +60,7 @@ font-style: normal;
 font-weight: 800;
 line-height: normal;
 margin-left: 300px;
+
   }
   button{
     display: flex;
@@ -69,7 +79,7 @@ margin-top:380px;
   #sort{
     width: 172px;
 flex-shrink: 0;
-color: #FFF;
+color: #ffffff;
 font-family: Moul;
 font-size: 48px;
 font-style: normal;

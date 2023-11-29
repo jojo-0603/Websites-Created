@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital@1&family=Montserrat&family=Nova+Square&family=Oswald&display=swap');
+*{
+    margin:0;
+    padding: 0;
+}
+.navi{
+  padding: 40px;
+  background-color: rgba(0, 0, 0, 0.97);
+}
+.dropdown button{
+    padding: 10px 30px;
+    font-size: 30px;
+    color: rgb(27, 23, 23);
+    background-color: rgb(161, 230, 147);
+   border-radius: 10px;
+   font-weight: bold;
+    
+   font-family: 'Fira Sans', sans-serif;
+   font-family: 'Montserrat', sans-serif;
+   font-family: 'Nova Square', sans-serif;
+   font-family: 'Oswald', sans-serif;
+}
+.dropdown {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.main img{
+    width:100vw;
+    height: 100vh;
+    z-index: -1;
+    position: absolute;
+}
+.main h1{
+color: aquamarine;
+text-align: center;
+font-size: 100px;
+top:30px
+}
+footer{
+   top:100%;
+    background-color: beige;
+}
+.foot {
+    background:#000;
+padding:30px 0px;
+font-family: 'Play', sans-serif;
+text-align:center;
+width:100%;
+margin-top:40%;
+color: white;
+padding:0.6% 0%;
+font-size:0.8em;
+}
